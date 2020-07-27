@@ -1,0 +1,59 @@
+#contact{
+  background-color: #3C5499;
+  padding-left: $all-sections-padding-left;
+  padding-right: $all-sections-padding-right;
+  padding-bottom: $all-sections-padding-bottom;
+
+  h1{
+    padding-top: $all-sections-padding-top;
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+    font-size: $section-heading-font-size;
+  }
+
+  p.message{
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    margin: 0px auto 40px auto;
+  }
+
+  form{
+
+    input[type=text], input[type=email]{
+      width: 100%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      display: inline-block;
+      // border: 1px solid #ccc;
+      border-radius: 4px;
+      background-color: #273A71;
+    }
+
+    textarea {
+      width: 100%;
+      height: 150px;
+      padding: 12px 20px;
+      // border: 2px solid #ccc;
+      // border-radius: 4px;
+      background-color: #273A71;
+      resize: none;
+    }
+
+    input[type=submit] {
+      width: 100%;
+      background-color: #30BAE7;
+      color: white;
+      padding: 14px 20px;
+      margin: 8px 0;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    
+    // input[type=submit]:hover {
+    //   background-color: #45a049;
+    // }
+  }
+}

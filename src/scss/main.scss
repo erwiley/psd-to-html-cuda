@@ -1,0 +1,23 @@
+@import 'globals';
+@import 'variables';
+
+.main{
+  width:1442px;
+  margin: 0px auto;
+}
+
+.divider{
+  width:88px;
+  height:5px;
+  background-color: gray;
+  margin: 10px auto;
+}
+
+@import 'welcome';
+@import 'services';
+@import 'team';
+@import 'skills';
+@import 'portfolio';
+@import 'testimonials';
+@import 'contact';
+@import 'footer';

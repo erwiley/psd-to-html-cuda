@@ -1,0 +1,74 @@
+#portfolio{
+  background-color: #FFDD99;
+  padding-left: $all-sections-padding-left;
+  padding-right: $all-sections-padding-right;
+  padding-bottom: $all-sections-padding-bottom;
+
+  h1{
+    padding-top: $all-sections-padding-top;
+    text-align: center;
+    color: #393939;
+    font-size: $section-heading-font-size;
+  }
+
+  p.message{
+    color: #393939;
+    font-size: 20px;
+    text-align: center;
+    margin: 0px auto 40px auto;
+    width:650px;
+  }
+
+  .search-buttons{
+    text-align: center;
+    margin-bottom: 30px;
+
+    button{
+      background: rgba(57, 57, 57, 0.15);
+      font-size: 18px;
+      text-transform: uppercase;
+      border: none;
+      border-radius: 4px;
+      padding:8px 16px;
+      margin-left:10px;
+    }
+
+    button:first-of-type{
+      background: white;
+    }
+  }
+
+  .design-info-cards{
+    display:flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    .info-card{
+      margin-bottom: 30px;
+
+      img{
+        width:541px;
+        height:334px;
+        object-fit: cover;
+      }
+
+      h3{
+        color:#393939;
+        text-align: center;
+      }
+    }
+  }
+
+  .btn{
+    text-align: center;
+
+    button{
+      background:#17C2A4;
+      border: none;
+      border-radius: 4px;
+      padding:10px 50px;
+      color:white;
+      text-transform: uppercase;
+    }
+  }
+}

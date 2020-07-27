@@ -1,0 +1,77 @@
+#team{
+  background-color: #E7F1F8;
+  padding-left: $all-sections-padding-left;
+  padding-right: $all-sections-padding-right;
+  padding-bottom: $all-sections-padding-bottom;
+
+  h1{
+    padding-top: $all-sections-padding-top;
+    text-align: center;
+    font-size: $section-heading-font-size;
+  }
+
+  p.message{
+    color: #3C4761;  
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  #team-info{
+    display: flex;
+    justify-content: space-between;
+
+    .team-card{
+      width:20%;
+
+      .gray-circle{
+        width:200px;
+        height:200px;
+        border-radius: 50%;
+        background-color: #878787;
+      }
+
+      h2{
+        margin-top: 20px;
+        text-align: center;
+      }
+
+      h3{
+        text-align: center;
+      }
+
+      p{
+        text-align: center;
+      }
+
+      .social-media{
+        display: flex;
+
+        .facebook{
+          //style="top:25%;left:30%;
+          width:18x;
+          height:14px;
+        }
+        .twitter{
+          //style="top:25%;left:30%;
+          width:9x;
+          height:15px;
+        }
+        .linkedin{
+          //style="top:25%;left:30%;
+          width:32x;
+          height:32px
+        }
+        .mail{
+          //style="top:25%;left:30%;
+          width:32x;
+          height:32px
+        }
+      }
+    }
+  }
+}
+
+
+
+

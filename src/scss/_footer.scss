@@ -1,0 +1,18 @@
+#footer{
+
+  background-color: #344B8E;
+  padding-left: $all-sections-padding-left;
+  padding-right: $all-sections-padding-right;
+  padding-bottom: 30px;
+
+  ul{
+    list-style: none;
+    display:flex;
+    justify-content: space-between;
+    font-size: 24px;
+    font-weight: 600;
+    color:white;
+    padding-top: 30px;
+  }
+
+}
