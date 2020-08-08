@@ -140,30 +140,26 @@
       <p class="message">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
         tempor incididunt ut labore et dolore magna aliqua.
       </p>
-      <section>
-        <div class="graph-card">
-          <div class="graph graph-web">
-            <div>90%</div>
-          </div>
-          <h3>Web Design</h3>
+      <section class="charts">
+        <div class="chart">
+          <div id="chart1"></div>
+          <span class="percent">90%</span>
+          <div class="title">Web Design</div>
         </div>
-        <div class="graph-card">
-          <div class="graph graph-css">
-            <div>90%</div>
-          </div>
-          <h3>HTML / CSS</h3>
+        <div class="chart">
+          <div id="chart2"></div>
+          <span class="percent">75%</span>
+          <div class="title">HTML / CSS</div>
         </div>
-        <div class="graph-card">
-          <div class="graph graph-design">
-            <div>90%</div>
-          </div>
-          <h3>GRAPHIC DESIGN</h3>
+        <div class="chart">
+          <div id="chart3"></div>
+          <span class="percent">70%</span>
+          <div class="title">GRAPHIC DESIGN</div>
         </div>
-        <div class="graph-card">
-          <div class="graph graph-ux">
-            <div>90%</div>
-          </div>
-          <h3>UI / UX</h3>
+        <div class="chart">
+          <div id="chart4"></div>
+          <span class="percent">85%</span>
+          <div class="title">UI / UX</div>
         </div>
       </section>
     </section><!-- skills section close -->
@@ -276,7 +272,9 @@
         <label for="message">Your Message</label>
         <textarea></textarea>
 
-        <input type="submit" value="Submit">
+        <div class="submit">
+          <input type="submit" value="SEND MESSAGE">
+        </div>
       </form>
     </section><!-- contact section close -->
 
@@ -291,9 +289,9 @@
         <li>Github</li>
       </ul>
     </section><!-- footer section close -->
-
-
   </div><!-- main div close -->
+
+  <script src="js/donut-chart.js"></script>
 </body>
 
 </html>
