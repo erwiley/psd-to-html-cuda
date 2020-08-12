@@ -29,8 +29,8 @@
       <p>
         Hi there! We are the new kids on the block<br>and we build awesome websites and mobile apps.
       </p>
-      <div class="button">
-        <button>Work with us!</button>
+      <div class="btn-wrapper">
+        <button class="btn">Work with us!</button>
       </div>
     </section><!-- welcome section close -->
 
@@ -194,8 +194,8 @@
           <h3>Blog / Magazine Flat UI Kit</h3>
         </div>
       </div>
-      <div class="btn">
-        <button>Load More Projects</button>
+      <div class="btn-wrapper">
+        <button class="btn">Load More Projects</button>
       </div>
     </section><!-- portfolio section close -->
 
@@ -263,17 +263,18 @@
       <p class="message">1600 Pennsylvania Ave NW, Washington, DC 20500, United States of America. Tel: (202) 456-1111
       </p>
       <form action="">
-        <label for="fullname">Your Name*</label>
-        <input type="text" id="fullname" name="fullname" placeholder="">
+        <div class="form-container">
+          <!-- <label for="fullname">Your Name*</label> -->
+          <input type="text" id="fullname" name="fullname" placeholder="Your Name*">
 
-        <label for="email">Your Email</label>
-        <input type="email" id="email" name="email" placeholder="">
+          <!-- <label for="email">Your Email</label> -->
+          <input type="email" id="email" name="email" placeholder="Your Email*">
 
-        <label for="message">Your Message</label>
-        <textarea></textarea>
-
-        <div class="submit">
-          <input type="submit" value="SEND MESSAGE">
+          <!-- <label for="message">Your Message</label> -->
+          <textarea placeholder="Your Message*" class="full-width"></textarea>
+        </div>
+        <div class="btn-wrapper">
+          <button type="submit" class="btn">SEND MESSAGE</button>
         </div>
       </form>
     </section><!-- contact section close -->

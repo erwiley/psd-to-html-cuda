@@ -14,8 +14,6 @@
     ul {
       display: flex;
       list-style-type: none;
-      // margin: 0;
-      // padding: 0;
 
       li{
         margin-left: 30px;
@@ -33,20 +31,11 @@
     text-align: center;
   }
 
-  .button { 
-    display: flex; 
-    justify-content: center; 
-
-    button {
-      background: #EB7D4B;
-      border-radius: 5px;
-      color:white;
-      margin:40px auto 0px auto;
-      padding:20px 40px;
-      border:none;
-      text-transform: uppercase;
-      font-weight: 400;
-      font-size: 16px;
+  .btn-wrapper { 
+    text-align: center;
+    
+    .btn {
+      @include btn(orange);
     }
   }
 }

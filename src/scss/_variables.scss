@@ -4,3 +4,27 @@ $all-sections-padding-top:100px;
 $all-sections-padding-bottom:100px;
 
 $section-heading-font-size:40px;
+
+
+
+@mixin btn($bg-color) {
+  border-radius: 5px;
+  color:white;
+  margin:40px auto 0px auto;
+  padding:20px 40px;
+  border:none;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 16px;
+  cursor: pointer;
+
+  @if $bg-color == orange {
+    background:#EB7D4B;
+  } @else if $bg-color == green {
+    background:#17C2A4;
+  } @else if $bg-color == cyan {
+    background:#30BAE7;
+  } @else {
+    background:black;
+  }
+}
