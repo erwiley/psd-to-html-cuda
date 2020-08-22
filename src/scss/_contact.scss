@@ -1,22 +1,8 @@
 #contact{
   background-color: #3C5499;
-  padding-left: $all-sections-padding-left;
-  padding-right: $all-sections-padding-right;
-  padding-bottom: $all-sections-padding-bottom;
 
-  h1{
-    padding-top: $all-sections-padding-top;
-    text-align: center;
-    text-transform: uppercase;
+  h1, p{
     color: white;
-    font-size: $section-heading-font-size;
-  }
-
-  p.message{
-    color: white;
-    font-size: 20px;
-    text-align: center;
-    margin: 0px auto 40px auto;
   }
 
   form{

@@ -13,6 +13,27 @@
   margin: 10px auto;
 }
 
+section.outer{
+  padding-left: $all-sections-padding-left;
+  padding-right: $all-sections-padding-right;
+  padding-bottom: $all-sections-padding-bottom;
+
+  > h1{
+    padding-top: $all-sections-padding-top;
+    font-size: $section-heading-font-size;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+
+  > p{
+    font-size: 20px;
+    font-weight: 400;
+    margin: 0px auto 40px auto;
+    text-align: center;
+  }
+}
+
 @import 'welcome';
 @import 'services';
 @import 'team';

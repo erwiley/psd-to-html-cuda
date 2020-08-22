@@ -1,21 +1,11 @@
 #portfolio{
   background-color: #FFDD99;
-  padding-left: $all-sections-padding-left;
-  padding-right: $all-sections-padding-right;
-  padding-bottom: $all-sections-padding-bottom;
 
-  h1{
-    padding-top: $all-sections-padding-top;
-    text-align: center;
+  h1, p{
     color: #393939;
-    font-size: $section-heading-font-size;
   }
 
-  p.message{
-    color: #393939;
-    font-size: 20px;
-    text-align: center;
-    margin: 0px auto 40px auto;
+  p{
     width:650px;
   }
 
