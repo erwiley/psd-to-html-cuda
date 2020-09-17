@@ -1,11 +1,6 @@
 #skills{
   background-color: white;
 
-  p{
-    color: #3C4761;
-    width:650px;
-  }
-
   section.charts{
     display: flex; 
     justify-content: space-between; 
@@ -50,6 +45,19 @@
 
     }
   }
+}
 
+@media only screen and (max-width: $breakpoint-phone) {
+
+#skills{
   
+  section.charts{
+    flex-wrap: wrap;
+
+    .chart {
+      width:40%;
+    }
+  }
+}
+
 }

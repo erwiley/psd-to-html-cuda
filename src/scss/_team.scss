@@ -1,10 +1,6 @@
 #team{
   background-color: #E7F1F8;
 
-  p{
-    color: #3C4761;
-  }
-
   #team-info{
     display: flex;
     justify-content: space-between;
@@ -17,6 +13,7 @@
         height:200px;
         border-radius: 50%;
         background-color: #878787;
+        margin: 0px auto;
       }
 
       h2{
@@ -75,6 +72,34 @@
   }
 }
 
+@media only screen and (max-width: $breakpoint-phone) {
 
+#team{
+  
+  #team-info{
+    flex-wrap: wrap;
+    
+    .team-card{
+      width:40%;
 
+      .gray-circle{
+        width:100px;
+        height:100px;
+      }
 
+      h2{
+        font-size: 18px;
+      }
+
+      h3{
+        font-size: 16px;
+      }
+
+      p{
+        height:170px;
+      }
+    }
+  }
+}
+
+} 

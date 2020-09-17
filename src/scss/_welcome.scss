@@ -1,4 +1,3 @@
-
 #welcome {
   background-color: #87509C;
   padding-top: 30px;
@@ -19,20 +18,45 @@
     }
   }
 
-  p{
-    color: #F7F3EA;  
-    margin: $all-sections-padding-top auto 0 auto;
+  p.welcome_intro{
+    color: #F7F3EA;
     width:1200px;
     font-size: 38px;
     font-weight: bold;
     text-align: center;
-  }
 
-  .btn-wrapper { 
-    text-align: center;
-    
-    .btn {
-      @include btn(orange);
+    .break2::after{
+      content: "\a";
+      white-space: pre;
     }
   }
 }
+
+@media only screen and (max-width: $breakpoint-phone) {
+
+  #welcome{
+    nav{
+      display:initial;
+
+      ul{
+        display:none;
+      }
+    }
+
+    p.welcome_intro{
+      width:100%;
+      font-size: 24px;
+
+      .break2::after{
+        content: "";
+        white-space: pre;
+      }
+
+      .break1::after,
+      .break3::after{
+        content: "\a";
+        white-space: pre;
+      }
+    }
+  }
+} 

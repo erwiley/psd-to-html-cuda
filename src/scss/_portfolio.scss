@@ -1,14 +1,6 @@
 #portfolio{
   background-color: #FFDD99;
 
-  h1, p{
-    color: #393939;
-  }
-
-  p{
-    width:650px;
-  }
-
   .search-buttons{
     text-align: center;
     margin-bottom: 30px;
@@ -48,12 +40,23 @@
       }
     }
   }
+}
 
-  .btn-wrapper{
-    text-align: center;
+@media only screen and (max-width: $breakpoint-phone) {
 
-    .btn{
-      @include btn(green);
+#portfolio{
+  
+  .design-info-cards{
+
+    .info-card{
+
+      img{
+        width:270px;
+        height:160px;
+        object-fit: cover;
+      }
     }
   }
+}
+
 }

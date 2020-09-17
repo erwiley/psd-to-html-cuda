@@ -1,10 +1,6 @@
 #testimonials{
   background-color: #D74680;
 
-  h1, p{
-    color: white;
-  }
-
   .client-cards{
     display:flex;
     justify-content: space-between;
@@ -46,8 +42,30 @@
         h3{
           color:#FFDD99;
         }
-      }
-      
+      }      
     }
   }
+}
+
+@media only screen and (max-width: $breakpoint-phone) {
+
+#testimonials{
+  
+  .client-cards{
+    
+    .card{
+      
+      .card-left{
+        display:none;
+        width:0px;
+      }
+
+      .card-right{
+        width:300px;
+        padding-left: 0px;
+      }
+    }
+  }
+}
+
 }

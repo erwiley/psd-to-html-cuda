@@ -11,5 +11,18 @@
     color:white;
     padding-top: 30px;
   }
+}
+
+@media only screen and (max-width: $breakpoint-phone) {
+
+#footer{
+  ul{
+    flex-wrap: wrap;
+    //justify-content: flex-start;
+    //justify-content: space-around;
+    font-size: 20px;
+  }
+
+}
 
 }

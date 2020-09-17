@@ -1,23 +1,23 @@
 #services{
   background-color: #17C2A4;
 
-  h1{
-    color:white;
-  }
-
-  > p{
-    color: white;
-    width:650px;
-  }
-
-  #services-info{
+  .services-info{
     display: flex;
     justify-content: space-between;
     margin-top: 80px;
     text-align: center;
 
+    //Flag    121 x 124
+    //Crayon   95 x 131
+    //Gears   160 x 127
+    //Rocket  104 x 135
+
     .services-card{
       width:20%;
+
+      .img-wrapper{
+        height:135px;
+      }
 
       h2, p{
         color:white;
@@ -33,5 +33,31 @@
       }
     }
   }
-  
 }
+
+@media only screen and (max-width: $breakpoint-phone) {
+
+  #services{
+  
+    .services-info{
+      flex-wrap: wrap;
+      margin-top: 40px;
+
+      .services-card{
+        width:40%;
+
+        .img-wrapper{
+          height:98px;
+
+          img{
+            height:98px;
+          }
+        }
+
+        h2{
+          font-size: 18px;
+        }
+      }
+    }
+  }
+} 
