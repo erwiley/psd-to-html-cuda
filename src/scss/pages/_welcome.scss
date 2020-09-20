@@ -52,11 +52,21 @@
         white-space: pre;
       }
 
-      .break1::after,
-      .break3::after{
-        content: "\a";
-        white-space: pre;
-      }
+      // .break1::after,
+      // .break3::after{
+      //   content: "\a";
+      //   white-space: pre;
+      // }
     }
   }
-} 
+}
+
+@media only screen and (min-width: $breakpoint-phone + 1 ) and (max-width: $breakpoint-desktop){
+  #welcome{
+
+    p.welcome_intro{
+      width:100%;
+      font-size: 24px;
+    }
+  }
+}

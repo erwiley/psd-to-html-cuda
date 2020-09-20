@@ -1,0 +1,32 @@
+main{
+  width:1442px;
+  margin: 0px auto;
+
+  @media only screen and (max-width: $breakpoint-desktop) {
+    width:100%;
+  }
+}
+
+.container{
+  width:1102px;
+  margin: 0px auto;
+
+  @media only screen and (max-width: $breakpoint-desktop) {
+    width:96%;
+  }
+}
+
+.section-padding{
+  padding-top: 100px;
+  padding-bottom: 100px;
+
+  @media only screen and (max-width: $breakpoint-desktop) {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  @media only screen and (min-width: $breakpoint-phone + 1 ) and (max-width: $breakpoint-desktop){
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+}

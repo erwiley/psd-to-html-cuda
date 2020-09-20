@@ -1,0 +1,40 @@
+.btn{
+  border-radius: 5px;
+  background:blue;
+  color:white;
+  margin:40px auto 0px auto;
+  padding:20px 40px;
+  border:none;
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 16px;
+  cursor: pointer;
+
+  &-orange {
+    background:#EB7D4B;
+  } 
+  &-green {
+    background:#17C2A4;
+  } 
+  &-cyan {
+    background:#30BAE7;
+  }
+
+  @media only screen and (max-width: $breakpoint-desktop) {
+    margin:20px auto 0px auto;
+    padding:10px 20px;
+    font-size: 14px;
+  }
+
+  // @media only screen and (max-width: $breakpoint-phone) {
+  //   margin:20px auto 0px auto;
+  //   padding:10px 20px;
+  //   font-size: 14px;
+  // }
+
+  // @media only screen and (min-width: $breakpoint-phone + 1 ) and (max-width: $breakpoint-desktop){
+  //   margin:30px auto 0px auto;
+  //   padding:16px 30px;
+  //   font-size: 15px;
+  // }
+}

@@ -1,17 +1,25 @@
 {
   "name": "cuda",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Webpage deployed [here](https://erwiley.github.io/psd-to-html-cuda/).",
+  "main": "gulpfile.js",
   "directories": {
     "doc": "docs"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/erwiley/psd-to-html-cuda.git"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/erwiley/psd-to-html-cuda/issues"
+  },
+  "homepage": "https://github.com/erwiley/psd-to-html-cuda#readme",
   "devDependencies": {
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^7.0.1",

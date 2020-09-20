@@ -1,137 +1,32 @@
-@import 'globals';
-@import 'variables';
+@import 'config/variables';  
+//@import 'config/mixins';     
+         
+@import 'base/resets';
+@import 'base/utilities';
+@import 'base/fonts';
+//@import 'base/grid';
 
-main{
-  width:1442px;
-  margin: 0px auto;
+// @import 'layout/header';
+// @import 'layout/navigation';
+// @import 'layout/footer';
+@import 'layout/layout';
+// @import 'layout/sidebar';
+// @import 'layout/form';
 
-  @media only screen and (max-width: $breakpoint-phone) {
-      width:100%;
-  }
-}
+@import 'components/buttons';
+@import 'components/intro';
+// @import 'components/dropdown';
+// @import 'components/popup';
+// @import 'components/carousel';
 
-.container{
-  width:1102px;
-  margin: 0px auto;
+@import 'pages/welcome';
+@import 'pages/services';
+@import 'pages/skills';
+@import 'pages/team';
+@import 'pages/contact';
+@import 'pages/portfolio';
+@import 'pages/testimonials';
+@import 'pages/footer';
 
-  @media only screen and (max-width: $breakpoint-phone) {
-    width:96%;
-  }
-}
-
-.divider{
-  width:88px;
-  height:5px;
-  background-color: gray;
-  margin: 10px auto;
-}
-
-.section-padding{
-  padding-top: 100px;
-  padding-bottom: 100px;
-
-  @media only screen and (max-width: $breakpoint-phone) {
-    padding-top: 30px;
-    padding-bottom: 30px;
-  }
-}
-
-.intro {
-  
-  &__title {
-    font-size: 40px;
-    text-align: center;
-    text-transform: uppercase;
-    font-weight: 700;
-
-    @media only screen and (max-width: $breakpoint-phone) {
-      font-size: 20px;
-    }
-  } 
-  &__divider {
-    width:88px;
-    height:5px;
-    background-color: gray;
-    margin: 10px auto;
-  }  
-  &__message {
-    font-size: 20px;
-    font-weight: 400;
-    margin: 0px auto 40px auto;
-    text-align: center;
-  }
-}
-
-.btn{
-  border-radius: 5px;
-  background:blue;
-  color:white;
-  margin:40px auto 0px auto;
-  padding:20px 40px;
-  border:none;
-  text-transform: uppercase;
-  font-weight: 300;
-  font-size: 16px;
-  cursor: pointer;
-
-  &-orange {
-    background:#EB7D4B;
-  } 
-  &-green {
-    background:#17C2A4;
-  } 
-  &-cyan {
-    background:#30BAE7;
-  }
-
-  @media only screen and (max-width: $breakpoint-phone) {
-    margin:20px auto 0px auto;
-    padding:10px 20px;
-    font-size: 14px;
-  }
-}
-
-.text-center{
-  text-align: center;
-}
-
-.text-white {
-  color: white;
-}
-
-.text-black-one {
-  color: #3C4761;
-}
-
-.text-black-two {
-  color: #393939;
-}
-
-.w-50 {
-  width:50%;
-}
-
-.w-55 {
-  width:55%;
-}
-
-.w-60 {
-  width:60%;
-}
-
-.w-70 {
-  width:70%;
-}
-
-.w-80 {
-  width:80%;
-}
-
-@import 'welcome';
-@import 'services';
-@import 'team';
-@import 'skills';
-@import 'portfolio';
-@import 'testimonials';
-@import 'contact';
-@import 'footer';
+// @import 'vendors/bootstrap';
+// @import 'vendors/jquery-ui';
