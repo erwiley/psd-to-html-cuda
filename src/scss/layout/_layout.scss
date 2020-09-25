@@ -2,7 +2,7 @@ main{
   width:1442px;
   margin: 0px auto;
 
-  @media only screen and (max-width: $breakpoint-desktop) {
+  @include for-phone-and-tablet{
     width:100%;
   }
 }
@@ -11,7 +11,7 @@ main{
   width:1102px;
   margin: 0px auto;
 
-  @media only screen and (max-width: $breakpoint-desktop) {
+  @include for-phone-and-tablet{
     width:96%;
   }
 }
@@ -20,12 +20,12 @@ main{
   padding-top: 100px;
   padding-bottom: 100px;
 
-  @media only screen and (max-width: $breakpoint-desktop) {
+  @include for-phone-only {
     padding-top: 30px;
     padding-bottom: 30px;
   }
 
-  @media only screen and (min-width: $breakpoint-phone + 1 ) and (max-width: $breakpoint-desktop){
+  @include for-tablet-only{
     padding-top: 50px;
     padding-bottom: 50px;
   }

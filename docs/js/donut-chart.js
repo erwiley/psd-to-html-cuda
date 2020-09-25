@@ -112,9 +112,23 @@ function DonutChart(parent, spec) {
 ///// My Code /////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////
 
+let donutRadius = 80;
+let donutStroke = 15
+const mediaQueryPhoneOnly = window.matchMedia('(max-width: 600px)');
+const mediaQueryTabletOnly = window.matchMedia('(min-width: 601px ) and (max-width: 900px)');
+
+if (mediaQueryPhoneOnly.matches) {
+  donutRadius = 60;
+  donutStroke = 12;
+};
+if (mediaQueryTabletOnly.matches) {
+  donutRadius = 60;
+  donutStroke = 12;
+};
+
 var myChart = new DonutChart(document.getElementById("chart1"), {
-  r: 80,
-  stroke: 15,
+  r: donutRadius,
+  stroke: donutStroke,
   scale: 100,
   items: [
     { label: "A", value: .9 }
@@ -122,8 +136,8 @@ var myChart = new DonutChart(document.getElementById("chart1"), {
 })
 
 var myChart = new DonutChart(document.getElementById("chart2"), {
-  r: 80,
-  stroke: 15,
+  r: donutRadius,
+  stroke: donutStroke,
   scale: 100,
   items: [
     { label: "A", value: .75 }
@@ -131,8 +145,8 @@ var myChart = new DonutChart(document.getElementById("chart2"), {
 })
 
 var myChart = new DonutChart(document.getElementById("chart3"), {
-  r: 80,
-  stroke: 15,
+  r: donutRadius,
+  stroke: donutStroke,
   scale: 100,
   items: [
     { label: "A", value: .7 }
@@ -140,8 +154,8 @@ var myChart = new DonutChart(document.getElementById("chart3"), {
 })
 
 var myChart = new DonutChart(document.getElementById("chart4"), {
-  r: 80,
-  stroke: 15,
+  r: donutRadius,
+  stroke: donutStroke,
   scale: 100,
   items: [
     { label: "A", value: .85 }

@@ -1,0 +1,13 @@
+@mixin for-phone-only {
+  @media (max-width: $breakpoint-phone) { @content; }
+}
+@mixin for-tablet-only {
+  @media (min-width: $breakpoint-phone + 1 ) and (max-width: $breakpoint-desktop) { @content; }
+}
+@mixin for-phone-and-tablet {
+  @media (max-width: $breakpoint-desktop) { @content; }
+}
+
+//@include for-phone-only {}
+//@include for-tablet-only {}
+//@include for-phone-and-tablet {}

@@ -7,57 +7,52 @@
     margin-top: 80px;
     text-align: center;
 
-    //Flag    121 x 124
-    //Crayon   95 x 131
-    //Gears   160 x 127
-    //Rocket  104 x 135
+    @include for-phone-only {
+      flex-wrap: wrap;
+      margin-top: 40px;
+    }
 
     .services-card{
       width:20%;
 
+      @include for-phone-only{ 
+        width:44%; 
+        &:nth-child(1),
+        &:nth-child(2){
+          padding-bottom: 30px;
+        }
+      }
+      @include for-tablet-only{ width:22%; }
+
       .img-wrapper{
         height:135px;
+
+        @include for-phone-only{ height:80px; }
+        @include for-tablet-only{ height:88px; }
+
+        img{
+          @include for-phone-only{ height:80px; }
+          @include for-tablet-only{ height:88px; }
+        }
       }
 
-      h2, p{
+      h3, p{
         color:white;
       }
 
-      h2{
+      h3{
         margin-top:40px;
         text-transform: uppercase;
+        font-size: $font-size-sub-heading-desktop;
+
+        @include for-phone-only{ font-size: $font-size-sub-heading-phone; }
+        @include for-tablet-only{ font-size: $font-size-sub-heading-tablet; }
       }
 
       p{
         margin-top:20px;
+        font-size: $font-size-sub-text-desktop;
       }
     }
   }
 }
-
-@media only screen and (max-width: $breakpoint-phone) {
-
-  #services{
-  
-    .services-info{
-      flex-wrap: wrap;
-      margin-top: 40px;
-
-      .services-card{
-        width:40%;
-
-        .img-wrapper{
-          height:98px;
-
-          img{
-            height:98px;
-          }
-        }
-
-        h2{
-          font-size: 18px;
-        }
-      }
-    }
-  }
-} 

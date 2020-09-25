@@ -11,6 +11,10 @@
       display: flex;
       list-style-type: none;
 
+      @include for-phone-only{
+        display:none;
+      }
+
       li{
         margin-left: 30px;
         color: white;
@@ -21,52 +25,26 @@
   p.welcome_intro{
     color: #F7F3EA;
     width:1200px;
-    font-size: 38px;
-    font-weight: bold;
+    font-size: $font-size-main-heading-desktop;
+    font-weight: 700;
     text-align: center;
+
+    @include for-phone-only{
+      width:100%;
+      font-size: $font-size-main-heading-phone;
+    }
+    @include for-tablet-only{
+      width:100%;
+      font-size: $font-size-main-heading-tablet;
+    }
 
     .break2::after{
       content: "\a";
       white-space: pre;
-    }
-  }
-}
 
-@media only screen and (max-width: $breakpoint-phone) {
-
-  #welcome{
-    nav{
-      display:initial;
-
-      ul{
-        display:none;
-      }
-    }
-
-    p.welcome_intro{
-      width:100%;
-      font-size: 24px;
-
-      .break2::after{
+      @include for-phone-only{
         content: "";
-        white-space: pre;
       }
-
-      // .break1::after,
-      // .break3::after{
-      //   content: "\a";
-      //   white-space: pre;
-      // }
-    }
-  }
-}
-
-@media only screen and (min-width: $breakpoint-phone + 1 ) and (max-width: $breakpoint-desktop){
-  #welcome{
-
-    p.welcome_intro{
-      width:100%;
-      font-size: 24px;
     }
   }
 }

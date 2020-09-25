@@ -13,6 +13,13 @@
       border-radius: 4px;
       padding:8px 16px;
       margin-left:10px;
+
+      @include for-phone-only {
+        font-size: 14px;
+      }
+      @include for-tablet-only {
+        font-size: 16px;
+      }
     }
 
     button:first-of-type{
@@ -22,7 +29,7 @@
 
   .design-info-cards{
     display:flex;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-wrap: wrap;
 
     .info-card{
@@ -32,6 +39,11 @@
         width:541px;
         height:334px;
         object-fit: cover;
+
+        @include for-phone-only {
+          width:270px;
+          height:160px;
+        }
       }
 
       h3{
@@ -40,23 +52,4 @@
       }
     }
   }
-}
-
-@media only screen and (max-width: $breakpoint-phone) {
-
-#portfolio{
-  
-  .design-info-cards{
-
-    .info-card{
-
-      img{
-        width:270px;
-        height:160px;
-        object-fit: cover;
-      }
-    }
-  }
-}
-
 }

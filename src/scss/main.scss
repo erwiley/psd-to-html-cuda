@@ -1,5 +1,5 @@
 @import 'config/variables';  
-//@import 'config/mixins';     
+@import 'config/mixins';     
          
 @import 'base/resets';
 @import 'base/utilities';
@@ -21,11 +21,11 @@
 
 @import 'pages/welcome';
 @import 'pages/services';
-@import 'pages/skills';
 @import 'pages/team';
-@import 'pages/contact';
+@import 'pages/skills';
 @import 'pages/portfolio';
 @import 'pages/testimonials';
+@import 'pages/contact';
 @import 'pages/footer';
 
 // @import 'vendors/bootstrap';

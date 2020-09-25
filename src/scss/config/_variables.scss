@@ -1,6 +1,25 @@
 $breakpoint-phone: 600px;
-$breakpoint-tablet: 767px;
 $breakpoint-desktop: 900px;
+
+$font-size-main-heading-desktop: 42px;
+$font-size-sub-heading-desktop: 24px;
+$font-size-sub-text-desktop: 16px;
+$font-size-section-heading-desktop: 40px;
+$font-size-section-paragraph-desktop: 18px;
+
+//$font-size-scale-tablet: 0.8;
+$font-size-main-heading-tablet: 34px;
+$font-size-sub-heading-tablet: 20px;
+$font-size-sub-text-tablet: 16px;
+$font-size-section-heading-tablet: 32px;
+$font-size-section-paragraph-tablet: 18px;
+
+//$font-size-scale-phone: 0.8;
+$font-size-main-heading-phone: 30px;
+$font-size-sub-heading-phone: 18px;
+$font-size-sub-text-phone: 16px;
+$font-size-section-heading-phone: 26px;
+$font-size-section-paragraph-phone: 16px;
 
 .text-black-one {
   color: #3C4761;
@@ -9,3 +28,49 @@ $breakpoint-desktop: 900px;
 .text-black-two {
   color: #393939;
 }
+
+
+////// Welcome H1
+//font-size: 42px;
+//line-height: 49px;
+//color: #f7f3ea;
+//font-weight: 700;
+
+////// Section H2
+//font-size: 40px;
+//line-height: 30px;
+//color: #ffffff;
+//font-weight: 700;
+//letter-spacing: 4px;
+
+////// Section Paragraph
+//font-size: 18px;
+//line-height: 26px;
+//color: #ffffff;
+//font-weight: 400;
+//letter-spacing: 0px;
+
+////// Sub Heading H3
+//font-size: 24px;
+//line-height: 18px;
+//color: #ffffff;
+//font-weight: 700;
+//letter-spacing: 0px;
+
+////// Section Services Card Title
+//font-size: 24px;
+//line-height: 18px;
+//color: #ffffff;
+//font-weight: 700;
+
+////// Section Services Card Text
+//font-size: 16px;
+//line-height: 24px;
+//color: #ffffff;
+//font-weight: 300;
+
+////// Section Team  Card Title
+//font-size: 24px;
+//line-height: 18px;
+//color: #27283d;
+//font-weight: 700;

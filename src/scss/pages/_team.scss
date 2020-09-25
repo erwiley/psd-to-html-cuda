@@ -5,8 +5,13 @@
     display: flex;
     justify-content: space-between;
 
+    @include for-phone-only { flex-wrap: wrap; }
+
     .team-card{
       width:19%;
+
+      @include for-phone-only { width:45%; }
+      @include for-tablet-only { width:20%; }
 
       .gray-circle{
         width:200px;
@@ -14,23 +19,45 @@
         border-radius: 50%;
         background-color: #878787;
         margin: 0px auto;
-      }
 
-      h2{
-        margin-top: 20px;
-        text-align: center;
-        text-transform: uppercase;
+        @include for-phone-only { 
+          width:100px;
+          height:100px;
+        }
+
+        @include for-tablet-only {
+          width:130px;
+          height:130px;
+        }
+        
       }
 
       h3{
+        margin-top: 20px;
+        text-align: center;
+        text-transform: uppercase;
+        font-size: $font-size-sub-heading-desktop;
+
+        @include for-phone-only { font-size: $font-size-sub-heading-phone - 1; }
+        @include for-tablet-only { font-size: $font-size-sub-heading-tablet - 2; }
+      }
+
+      h4{
         text-align: center;
         font-weight: 400;
         color:#30BAE7;
+        font-size: $font-size-sub-heading-desktop - 6;
+
+        @include for-phone-only { font-size: $font-size-sub-heading-phone - 3; }
+        @include for-tablet-only { font-size: $font-size-sub-heading-tablet - 4; }
       }
 
       p{
         text-align: center;
         height:150px;
+
+        @include for-phone-only { height:190px; }
+        @include for-tablet-only { height:200px; }
       }
 
       .social-media{
@@ -70,68 +97,4 @@
       }
     }
   }
-}
-
-@media only screen and (max-width: $breakpoint-phone) {
-
-#team{
-  
-  #team-info{
-    flex-wrap: wrap;
-    
-    .team-card{
-      width:40%;
-
-      .gray-circle{
-        width:100px;
-        height:100px;
-      }
-
-      h2{
-        font-size: 18px;
-      }
-
-      h3{
-        font-size: 16px;
-      }
-
-      p{
-        height:170px;
-      }
-    }
-  }
-}
-
-} 
-
-@media only screen and (min-width: $breakpoint-phone + 1 ) and (max-width: $breakpoint-desktop){
-
-  #team{
-  
-    #team-info{
-      //flex-wrap: wrap;
-      
-      .team-card{
-        //width:40%;
-  
-        .gray-circle{
-          width:140px;
-          height:140px;
-        }
-  
-        // h2{
-        //   font-size: 18px;
-        // }
-  
-        // h3{
-        //   font-size: 16px;
-        // }
-  
-        // p{
-        //   height:170px;
-        // }
-      }
-    }
-  }
-
 }

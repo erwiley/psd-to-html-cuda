@@ -5,8 +5,15 @@
     display: flex; 
     justify-content: space-between; 
 
+    @include for-phone-only { 
+      flex-wrap: wrap; 
+      justify-content:space-around;
+    }
+
     .chart {
-      width:160px;
+      width:184px;
+
+      @include for-phone-only { width:130px; }
 
       #chart1 .chart-item-bg { stroke: #ddd }
       #chart1 .chart-item-0 { stroke: #30BAE7}
@@ -19,19 +26,30 @@
 
       #chart4 .chart-item-bg { stroke: #ddd }
       #chart4 .chart-item-0 { stroke: #EB7D4B}
+
+      #chart1, #chart2, #chart3, #chart4{
+        padding-left: 12px;
+
+        @include for-phone-only { padding-left: 5px; }
+        @include for-tablet-only { padding-left: 32px; }
+      }
     
       span.percent{
         display: inline-block;
         font-size:42px;
         margin-top: -130px;
-        margin-left: 50px;
-      }
+        margin-left: 62px;
 
-      span.title{
-        display: inline-block;
-        text-transform: uppercase;
-        font-size: 20px;
-        font-weight: bolder;
+        @include for-phone-only { 
+          font-size:32px;
+          margin-top: -96px;
+          margin-left: 44px;
+        }
+        @include for-tablet-only { 
+          font-size:32px;
+          margin-top: -96px;
+          margin-left: 68px;
+        }
       }
 
       div.title{
@@ -39,25 +57,13 @@
         text-align: center;
         color:#3C4761;
         text-transform: uppercase;
-        font-size: 20px;
+        font-size: $font-size-sub-heading-desktop;
         font-weight: bolder;
+
+        @include for-phone-only { font-size: $font-size-sub-heading-phone - 1; }
+        @include for-tablet-only { font-size: $font-size-sub-heading-tablet; }
       }
 
     }
   }
-}
-
-@media only screen and (max-width: $breakpoint-phone) {
-
-#skills{
-  
-  section.charts{
-    flex-wrap: wrap;
-
-    .chart {
-      width:40%;
-    }
-  }
-}
-
 }
